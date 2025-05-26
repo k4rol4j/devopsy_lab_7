@@ -1,4 +1,4 @@
-name: lab_7_414816_test
+name: lab_7_00000_test
 
 on:
   push:
@@ -24,9 +24,9 @@ jobs:
     
     - name: prepare environemnt 
       run: |
-         cd ./Lab_7/env_414816 && python -m pip install -r requirements.txt
+         cd ./Lab_7/env_0000 && python -m pip install -r requirements.txt
       
 
     - name: Run test
       run: |
-        cd ./Lab_7/env_414816 && pytest calculator_test.py
+        cd ./Lab_7/env_0000 && pytest calculator_test.py
