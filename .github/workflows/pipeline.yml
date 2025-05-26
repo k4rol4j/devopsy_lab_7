@@ -15,7 +15,7 @@ jobs:
           python-version: '3.11'
       - run: |
           pip install -r requirements.txt
-          pytest tests/test_dodawanie.py
+          pytest test_dodawanie.py
 
   test_odejmowanie:
     runs-on: ubuntu-latest
@@ -26,7 +26,7 @@ jobs:
           python-version: '3.11'
       - run: |
           pip install -r requirements.txt
-          pytest tests/test_odejmowanie.py
+          pytest test_odejmowanie.py
 
   test_mnozenie:
     runs-on: ubuntu-latest
@@ -37,7 +37,7 @@ jobs:
           python-version: '3.11'
       - run: |
           pip install -r requirements.txt
-          pytest tests/test_mnozenie.py
+          pytest test_mnozenie.py
 
   test_dzielenie:
     runs-on: ubuntu-latest
@@ -48,7 +48,7 @@ jobs:
           python-version: '3.11'
       - run: |
           pip install -r requirements.txt
-          pytest tests/test_dzielenie.py
+          pytest test_dzielenie.py
 
   new_test:
     runs-on: ubuntu-latest
@@ -60,4 +60,4 @@ jobs:
           python-version: '3.11'
       - run: |
           pip install -r requirements.txt
-          pytest tests/test_statystyka.py
+          pytest test_statystyka.py
