@@ -1,4 +1,4 @@
-name: lab_7_00000_test
+name: lab_7_414816_test
 
 on:
   push:
@@ -20,13 +20,12 @@ jobs:
 
     - name: Install libs for testing
       run: |
-        pip  install pytest 
+        pip install pytest 
     
-    - name: prepare environemnt 
+    - name: Prepare environment 
       run: |
-         cd ./Lab_7/env_0000 && python -m pip install -r requirements.txt
-      
+        python -m pip install -r requirements.txt
 
     - name: Run test
       run: |
-        cd ./Lab_7/env_0000 && pytest calculator_test.py
+        pytest calculator_test.py
